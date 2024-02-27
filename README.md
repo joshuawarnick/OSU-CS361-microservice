@@ -35,7 +35,8 @@ These commands could be run
 
 **UML Diagram**
 
-![UML of microservice](https://lucid.app/lucidchart/ecb7f22d-8774-46ca-9bba-664f7d8e0d11/edit?invitationId=inv_1b07d51d-2129-46b3-8f96-062bfee663fc)
+![Microservice UML](https://github.com/joshuawarnick/OSU-CS361-microservice/assets/86386882/d531f581-f8f1-4fe6-bd90-42d9511d181f)
+
 
 **Execution**
 
