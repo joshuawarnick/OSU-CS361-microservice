@@ -9,10 +9,10 @@ def open_image(keyword):
 
     if os.path.exists(image_path):
         filename = os.path.basename(image_path)
-        image = Image.open(image_path)
-        image.show()
+        # image = Image.open(image_path)
+        # image.show()
         with open("pipe.txt", "w") as file:
-            file.write(f"{filename} opened\n")
+            file.write(f"{filename}\n")
     else:
         print("Image file not found.")
 
@@ -25,6 +25,7 @@ while True:
         print(f"Received: {content}")
         if content in ["Grunt", "Flood", "Hunter", "Jackal", "Elite"]:
             open_image(content)
+            file.close()
         else:
             print("Invalid keyword.")
 
