@@ -1,7 +1,7 @@
 import time
 def test():
     file = open('pipe.txt', 'w')
-    file.write('Hunter')
+    file.write('Grunt')
     file.close()
 
     time.sleep(12)

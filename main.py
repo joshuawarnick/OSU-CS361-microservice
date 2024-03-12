@@ -17,17 +17,20 @@ def open_image(keyword):
         print("Image file not found.")
 
 # Listen for changes in pipe.txt
-while True:
+run = True
+while run is True:
     with open("pipe.txt", "r") as file:
         content = file.read().strip()
 
     if content:
-        print(f"Received: {content}")
+        # print(f"Received: {content}")
         if content in ["Grunt", "Flood", "Hunter", "Jackal", "Elite"]:
             open_image(content)
             file.close()
         else:
-            print("Invalid keyword.")
+            # print("Invalid keyword.")
+            run = False
+
 
     # Wait for a short duration before checking again
     time.sleep(1)
